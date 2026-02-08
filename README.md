@@ -11,17 +11,16 @@ An Islamic Android app to help Muslims keep up with daily Azkar, track worship, 
 - **Dawa Lists** - Islamic sermon playlists linked to YouTube
 - **Prayer Times** - Real-time prayer times via Aladhan API
 - **Dark / Light mode**
-- **Firebase Auth** with Google Sign-In
+- **Cloudinary** for image uploads
 
 ## Tech Stack
 
 - **Kotlin** | **XML** | **Material Design 3**
 - **MVVM** - ViewModel + LiveData + Coroutines
 - **Room** - Local database
-- **Firebase** - Auth, Firestore, Storage
-- **Retrofit + OkHttp** - Networking
-- **Glide** - Image loading
-- **Jetpack Navigation** - Fragment navigation
+- **Firebase** - Firestore, Storage
+- **Retrofit** - Networking
+- **Cloudinary** - Image uploads
 - **DataStore** - Preferences
 - Min SDK 24 | Target SDK 36
 
