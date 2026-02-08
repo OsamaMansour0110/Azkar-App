@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/preyersFragment"
+        android:icon="@drawable/ic_timer"
+        android:title="@string/nav_taewidh" />
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nav_azkar" />
+
+    <item
+        android:id="@+id/AzkarFragment"
+        android:icon="@drawable/diamond_shine_24px"
+        android:title="@string/nav_kanz" />
+
+    <item
+        android:id="@+id/dawaListsFragment"
+        android:icon="@drawable/ic_menu"
+        android:title="@string/nav_qwaim" />
+
+</menu>

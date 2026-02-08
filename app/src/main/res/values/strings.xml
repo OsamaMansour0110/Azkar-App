@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AzkarApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id">188224413976-28889i4bdvisjb7lsjet7jlv657ngtjf.apps.googleusercontent.com</string>
+    <string name="nav_taewidh">تعويض</string>
+    <string name="nav_azkar">الأذكار</string>
+    <string name="nav_kanz">كنز</string>
+    <string name="nav_qwaim">قوائم</string>
+</resources>

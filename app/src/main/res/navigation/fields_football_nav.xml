@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fields_football_nav"
+    app:startDestination="@id/listFieldsFragment">
+
+    <fragment
+        android:id="@+id/listFieldsFragment"
+        android:name="com.learining.AzkarApp.UI.BotNav.FootbalFields.ListFieldsFragment"
+        android:label="List Fields">
+        <action
+            android:id="@+id/action_listFieldsFragment_to_FiledDetailsFragment"
+            app:destination="@id/FiledDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FiledDetailsFragment"
+        android:name="com.learining.AzkarApp.UI.BotNav.FootbalFields.FieldDetailsFragment"
+        android:label="Field Detail">
+        <action
+            android:id="@+id/action_FiledDetailsFragment_to_listFieldsFragment"
+            app:destination="@id/listFieldsFragment" />
+    </fragment>
+
+</navigation>

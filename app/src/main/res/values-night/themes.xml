@@ -1,0 +1,16 @@
+<resources>
+    <!-- Base application theme for Dark Mode. -->
+    <style name="Base.Theme.AzkarApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/teal_primary</item>
+        <item name="colorOnPrimary">@color/textOnPrimary</item>
+        
+        <!-- Background and surface colors. -->
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="colorSurface">@color/surfaceColor</item>
+        <item name="colorOnSurface">@color/textPrimary</item>
+        
+        <!-- UI Tweaks for Dark Mode -->
+        <item name="android:statusBarColor">@color/backgroundColor</item>
+    </style>
+</resources>

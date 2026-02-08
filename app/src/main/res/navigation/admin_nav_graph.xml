@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_nav_graph"
+    app:startDestination="@id/adminLoginFragment">
+
+    <fragment
+        android:id="@+id/adminLoginFragment"
+        android:name="com.learining.AzkarApp.UI.BotNav.Admin.AdminLoginFragment"
+        android:label="Admin Login"
+        tools:layout="@layout/fragment_admin_login">
+        <action
+            android:id="@+id/action_adminLoginFragment_to_adminAddFieldFragment"
+            app:destination="@id/adminAddDawaListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminAddDawaListFragment"
+        android:name="com.learining.AzkarApp.UI.BotNav.Admin.AdminAddDawaListFragment"
+        android:label="قائمة دعوية جديدة"
+        tools:layout="@layout/fragment_admin_add_dawa_list" />
+
+</navigation>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors (Stay constant or slightly adjusted) -->
+    <color name="teal_primary">#14A2A2</color> <!-- Brighter for dark mode -->
+    <color name="teal_light">#20C5C5</color>
+    <color name="teal_dark">#0D6F6F</color>
+    <color name="accent_gold">#E5C362</color>
+
+    <!-- UI Colors - Dark Mode -->
+    <color name="backgroundColor">#121414</color>
+    <color name="surfaceColor">#1A1C1C</color>
+    <color name="cardBackgroundColor">#222525</color>
+    
+    <!-- Text Colors - Dark Mode -->
+    <color name="textPrimary">#E1E3E3</color>
+    <color name="textSecondary">#8E9192</color>
+    <color name="textOnPrimary">#003737</color>
+    
+    <!-- Utilities -->
+    <color name="dividerColor">#3F4444</color>
+    <color name="errorColor">#FFB4AB</color>
+    <color name="successColor">#40916C</color>
+
+    <!-- Original Placeholders -->
+    <color name="black">#FFFFFFFF</color> <!-- Inverted for "black" named usages -->
+    <color name="white">#FF000000</color> <!-- Inverted for "white" named usages -->
+</resources>

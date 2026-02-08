@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_azkar_nav_graph"
+    app:startDestination="@id/azkarList">
+
+    <fragment
+        android:id="@+id/azkarList"
+        android:name="com.learining.AzkarApp.UI.BotNav.HomeAzkar.AzkarListFragment"
+        android:label="Azkar">
+        <action
+            android:id="@+id/action_azkarList_to_azkarContent"
+            app:destination="@id/azkarContent" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/azkarContent"
+        android:name="com.learining.AzkarApp.UI.BotNav.HomeAzkar.AzkarContentFragment"
+        android:label="Azkar">
+        <action
+            android:id="@+id/action_azkarContent_to_azkarList"
+            app:destination="@id/azkarList" />
+    </fragment>
+
+
+</navigation>

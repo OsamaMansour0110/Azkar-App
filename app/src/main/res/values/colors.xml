@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors -->
+    <color name="teal_primary">#0D6F6F</color>
+    <color name="teal_light">#14A2A2</color>
+    <color name="teal_dark">#084A4A</color>
+    <color name="accent_gold">#C5A442</color>
+
+    <!-- UI Colors - Light Mode -->
+    <color name="backgroundColor">#F8F9F9</color>
+    <color name="surfaceColor">#FFFFFF</color>
+    <color name="cardBackgroundColor">#FFFFFF</color>
+    
+    <!-- Text Colors - Light Mode -->
+    <color name="textPrimary">#1A1C1E</color>
+    <color name="textSecondary">#42474E</color>
+    <color name="textOnPrimary">#FFFFFF</color>
+    
+    <!-- Utilities -->
+    <color name="dividerColor">#E0E2E2</color>
+    <color name="errorColor">#BA1A1A</color>
+    <color name="successColor">#2D6A4F</color>
+
+    <!-- Original Placeholders (Keep for compatibility if used) -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="fab_default">#FF6200EE</color>
+    <color name="fab_pressed">#FF3700B3</color>
+    <color name="profile_bg">#FFE0E0E0</color>
+</resources>

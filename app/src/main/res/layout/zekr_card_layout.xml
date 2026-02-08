@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainCard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="7dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp"
+    app:strokeColor="#7C7575"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <!-- Scrollable Title Container -->
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:paddingTop="3dp"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toTopOf="@id/divider"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Title Header -->
+            <LinearLayout
+                android:id="@+id/headerContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="0.05"
+                    android:text="Morning Remembrance"
+                    android:textAllCaps="true"
+                    android:textColor="#0A0A0A"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <!-- Divider -->
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="12dp"
+            android:background="#F5F5F5"
+            app:layout_constraintBottom_toTopOf="@id/controlsContainer" />
+
+        <!-- Bottom Controls / Enterprise 3D Design -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/controlsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_controls_3d"
+            android:clipToPadding="false"
+            android:elevation="12dp"
+            android:paddingHorizontal="16dp"
+            android:translationZ="6dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <!-- Massive Counter Button (Far Left) - 3D Effect -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCounter"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:background="@drawable/bg_button_3d"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:text="33"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Right Side: Status & Actions -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rightInfoGroup"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingStart="16dp"
+                android:paddingBottom="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnCounter">
+
+                <!-- Target Count Detail -->
+                <LinearLayout
+                    android:id="@+id/countContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="end|center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvTargetValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:text="33"
+                        android:textColor="#005CBB"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="عدد المرات : "
+                        android:textColor="#44474E"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Action Button Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <!-- Reset Chip -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnReset"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:backgroundTint="#FFEBEE"
+                        android:text="Reset"
+                        android:textAllCaps="false"
+                        android:textColor="#D32F2F"
+                        android:textSize="12sp"
+                        app:cornerRadius="18dp"
+                        app:icon="@drawable/ic_refresh"
+                        app:iconSize="16dp"
+                        app:iconTint="#D32F2F"
+                        app:strokeColor="#FFCDD2"
+                        app:strokeWidth="1dp" />
+
+                    <!-- Save Chip -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSave"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:backgroundTint="#E8F5E9"
+                        android:text="Save"
+                        android:textAllCaps="false"
+                        android:textColor="#2E7D32"
+                        android:textSize="12sp"
+                        app:cornerRadius="18dp"
+                        app:icon="@drawable/ic_save"
+                        app:iconSize="16dp"
+                        app:iconTint="#2E7D32"
+                        app:strokeColor="#C8E6C9"
+                        app:strokeWidth="1dp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

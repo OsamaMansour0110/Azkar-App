@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rooms_nav_graph"
+    app:startDestination="@id/missed_extra">
+
+    <fragment
+        android:id="@+id/missed_extra"
+        android:name="com.learining.AzkarApp.UI.BotNav.Preyers.ListMissesFragment"
+        android:label="Pick Way">
+        <action
+            android:id="@+id/action_missed_extra_to_missed_preyers"
+            app:destination="@id/missed_preyers" />
+        <action
+            android:id="@+id/action_missed_extra_to_missed_fasting"
+            app:destination="@id/missed_fasting" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/missed_preyers"
+        android:name="com.learining.AzkarApp.UI.BotNav.Preyers.MissedPreyersFragment"
+        android:label="Missed Preyers" />
+
+    <fragment
+        android:id="@+id/missed_fasting"
+        android:name="com.learining.AzkarApp.UI.BotNav.Preyers.MissedFastingFragment"
+        android:label="Extra Preyers" />
+
+</navigation>

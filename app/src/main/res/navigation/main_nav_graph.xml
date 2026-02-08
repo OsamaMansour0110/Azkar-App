@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.learining.AzkarApp.UI.BotNav.HomeAzkar.HomeFragment"
+        android:label="Home" />
+
+    <fragment
+        android:id="@+id/dawaListsFragment"
+        android:name="com.learining.AzkarApp.UI.BotNav.DawaLists.DawaListsFragment"
+        android:label="قوائم دعوية" />
+
+    <fragment
+        android:id="@+id/AzkarFragment"
+        android:name="com.learining.AzkarApp.UI.BotNav.Fortune.FortuneMainFragment"
+        android:label="Great Fortune" />
+
+    <fragment
+        android:id="@+id/preyersFragment"
+        android:name="com.learining.AzkarApp.UI.BotNav.Preyers.MissedWorshipFragment"
+        android:label="preyers" />
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.learining.AzkarApp.UI.NavView.AboutFragment"
+        android:label="About" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.learining.AzkarApp.UI.NavView.SettingsFragment"
+        android:label="Settings" />
+
+    <fragment
+        android:id="@+id/savedZekrs"
+        android:name="com.learining.AzkarApp.UI.NavView.saveZekrFragment"
+        android:label="Saved Azkar" />
+
+    <fragment
+        android:id="@+id/adminMainFragment"
+        android:name="com.learining.AzkarApp.UI.BotNav.Admin.AdminMainFragment"
+        android:label="Admin Panel" />
+
+</navigation>

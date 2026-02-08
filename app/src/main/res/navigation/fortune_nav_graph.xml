@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fortune_nav_graph"
+    app:startDestination="@id/Options_Fortune">
+
+    <fragment
+        android:id="@+id/Options_Fortune"
+        android:name="com.learining.AzkarApp.UI.BotNav.Fortune.OptionsFortuneFragment"
+        android:label="Options">
+        <action
+            android:id="@+id/action_Options_Fortune_to_Counter_Fortune"
+            app:destination="@id/Counter_Fortune" />
+        <action
+            android:id="@+id/action_Options_Fortune_to_Status_Fortune"
+            app:destination="@id/Status_Fortune" />
+    </fragment>
+    <fragment
+        android:id="@+id/Counter_Fortune"
+        android:name="com.learining.AzkarApp.UI.BotNav.Fortune.CounterFortuneFragment"
+        android:label="Options" />
+    <fragment
+        android:id="@+id/Status_Fortune"
+        android:name="com.learining.AzkarApp.UI.BotNav.Fortune.StatusFortuneFragment"
+        android:label="Options" />
+
+</navigation>
