@@ -40,18 +40,19 @@ class CounterFortuneFragment : Fragment() {
         db = DataBaseBuilder.getInstance(requireContext())
 
         fun onAddScore(fortuneItem: FortuneItem, score: Int) {
-            // add condition if score equal 10 20 50 100
-            if (score == 10 || score == 20 || score == 50 || score == 100) {
-                // snake bar the this score
+            lifecycleScope.launch {
+                withContext(Dispatchers.IO) {
+                    db.fortuneDao().updateScore(fortuneItem.id, score)
+                }
+                val updatedFortunes = withContext(Dispatchers.IO) {
+                    db.fortuneDao().getAllFortunes()
+                }
+                adapter.updateList(updatedFortunes)
                 Snackbar.make(
-                    requireView(), "You have added $score to your score",
-                    Snackbar.LENGTH_LONG
+                    binding.root, "You have added $score to your score",
+                    Snackbar.LENGTH_SHORT
                 ).show()
             }
-            lifecycleScope.launch {
-                db.fortuneDao().updateScore(fortuneItem.id, score)
-            }
-            applyCurrentFilter()
         }
 
         adapter =

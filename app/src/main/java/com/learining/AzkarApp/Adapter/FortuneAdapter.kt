@@ -11,7 +11,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.snackbar.Snackbar
 import com.learining.AzkarApp.Data.model.FortuneItem
 import com.learining.AzkarApp.databinding.DialogPreviewZikrBinding
 import com.learining.AzkarApp.databinding.ItemFortuneCardBinding
@@ -56,10 +55,6 @@ class FortuneAdapter(
             val newScore = holder.binding.tvCount.text.toString().toInt()
             onAddScoreClick(fortune, newScore)
             holder.binding.tvCount.text = "0"
-            Snackbar.make(
-                holder.binding.root, "You have added $newScore to your score",
-                Snackbar.LENGTH_LONG
-            ).show()
         }
 
         holder.binding.btnPlus.setOnClickListener {
@@ -93,33 +88,21 @@ class FortuneAdapter(
         BindingPreviewItem.tvScore.text = fortune.score.toString()
 
         BindingPreviewItem.btnX10.setOnClickListener {
-            onAddScoreClick(fortune, 10)
-            Snackbar.make(
-                BindingPreviewItem.root, "You have added 10 to your score",
-                Snackbar.LENGTH_LONG
-            ).show()
             Dialog?.dismiss()
+            onAddScoreClick(fortune, 10)
         }
         BindingPreviewItem.btnX20.setOnClickListener {
-            onAddScoreClick(fortune, 20)
-            Snackbar.make(
-                BindingPreviewItem.root, "You have added 20 to your score",
-                Snackbar.LENGTH_LONG
-            ).show()
             Dialog?.dismiss()
+            onAddScoreClick(fortune, 20)
         }
         BindingPreviewItem.btnX50.setOnClickListener {
-            onAddScoreClick(fortune, 50)
             Dialog?.dismiss()
+            onAddScoreClick(fortune, 50)
         }
 
         BindingPreviewItem.btnX100.setOnClickListener {
-            onAddScoreClick(fortune, 100)
-            Snackbar.make(
-                BindingPreviewItem.root, "You have added 100 to your score",
-                Snackbar.LENGTH_LONG
-            ).show()
             Dialog?.dismiss()
+            onAddScoreClick(fortune, 100)
         }
 
         BindingPreviewItem.btnClose.setOnClickListener {

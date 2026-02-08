@@ -1,9 +1,16 @@
 <resources>
-    <string name="app_name">AzkarApp</string>
+    <string name="app_name">Azkar
+    </string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="default_web_client_id">188224413976-28889i4bdvisjb7lsjet7jlv657ngtjf.apps.googleusercontent.com</string>
     <string name="nav_taewidh">تعويض</string>
     <string name="nav_azkar">الأذكار</string>
     <string name="nav_kanz">كنز</string>
     <string name="nav_qwaim">قوائم</string>
+
+    <string name="about_subtitle">رفيقك اليومي في ذكر الله</string>
+    <string name="about_what_title">ما هو تطبيق أذكار؟</string>
+    <string name="about_what_body">تطبيق أذكار هو تطبيق إسلامي شامل يساعدك على المحافظة على ذكر الله في يومك.\n\nيحتوي التطبيق على:\n\n• أذكار الصباح والمساء والنوم والاستيقاظ مع عدّاد لكل ذِكر.\n• قسم كنز لتتبع الحسنات والأعمال الصالحة بنظام نقاط.\n• حاسبة الصلوات الفائتة لمعرفة عدد الصلوات التي تحتاج لقضائها.\n• متابعة أيام الصيام.\n• قوائم دعوية تحتوي على دروس ومحاضرات إسلامية.</string>
+    <string name="about_how_title">كيف تستخدم التطبيق؟</string>
+    <string name="about_how_body">١. الأذكار: اختر القسم المناسب (صباح، مساء، نوم، استيقاظ) واضغط على العدّاد لتسجيل كل ذِكر. يمكنك حفظ أذكارك المفضلة.\n\n٢. كنز الحسنات: اضغط على زر المعاينة لرؤية تفاصيل الذِكر، ثم أضف النقاط (×١٠، ×٢٠، ×٥٠، ×١٠٠) حسب عدد مرات التكرار.\n\n٣. تعويض الصلوات: أدخل عدد السنوات أو الأشهر الفائتة وسيحسب لك التطبيق عدد الصلوات، ثم سجّل كل صلاة تقضيها.\n\n٤. الصيام: تابع أيام صيامك وسجّلها يوماً بيوم.\n\n٥. القوائم الدعوية: تصفّح الدروس والمحاضرات واستمع إليها.\n\n٦. الإعدادات: فعّل الوضع الليلي واختر مدينتك لمواقيت الصلاة.</string>
 </resources>

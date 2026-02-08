@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmd /c \"gradlew.bat assembleDebug 2>&1\")",
+      "Bash(cmd.exe /c \"cd /d \"\"D:\\\\Native Android - Kotlin and XML\\\\AzkarApp\"\" && gradlew.bat assembleDebug 2>&1\")"
+    ]
+  }
+}
